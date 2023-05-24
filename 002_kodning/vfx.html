@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learn 2 | 3DVFX</title>
+    <meta name="description" content="Vi kommer til at gennemgå en masse brugebare teknikker lige fra simpel 3D modellering til avanceret 3D effekter.">
+        <!-- Favicon for browser window -->
+        <link rel="icon" type="image/jpg" href="img/3d_favicon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Linked stylesheet -->
+    <link rel="stylesheet" href="style.css">
+        <!-- Link for bootstrap icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+             <!-- Link for fontawesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link for google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- link for email.js -->
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("DHs-0RPe7FVACEeuX");
+    })();
+  </script>
+</head>
+  <body>
+<!-- Background color for painting page -->
+<div class="blue_container">
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 ps-4">
+                <!-- Aria-label, for people with a screen reader -->
+                    <a class="logo" href="/">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </div>
+                <div class="col-8 pe-4 text-end">
+                    <nav>
+                        <a class="active" href="vfx.html">3D/VFX</a>
+                    <!-- Added an active class for the active link in header -->
+                        <a href="paint.html">PAINT</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+     <!-- Wrapper for max width -->
+<div class="wrapper_learn">
+    <!-- Banner -->
+    <div class="banner_learn">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="load_h1" ><span>3</span>dvfx</h1>
+                </div>
+                <div class="col-12">
+                    <ul class="load_list">
+                        <li>3D Modelering</li>
+                        <li>Shading</li>
+                        <li>Lighting & composition</li>
+                    </ul>
+                </div>
+                <div class="col-12 pt-5 ps-3 fade-in2" >
+                <!-- scroll to link -->
+                    <a href="#scroll_to_vfx"
+                    style="display: flex;
+                    width: 36px;">
+                        <i class="bi bi-arrow-down"></i>
+                    </a>
+                </div>
+                <div class="video_learn hidden">
+                    <video class="w-100" preload="auto" autoplay muted playsinline loop>
+                        <source src="img/desktop_banner_rasmus_hd_rød.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Introduction text for painting -->
+
+    <section class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 p-4 pt-5 mt-2 pb-3 col-md-9 pt-md-5 pb-md-5 col-lg-7">
+                <h3 id="scroll_to_vfx">Lær VFX og 3D-rendering</h3>
+                <p>Vi kommer til at gennemgå en masse brugebare teknikker lige fra simpel 3D modellering til avanceret 3D effekter. Til dette kursus skal man bruge en computer jeg bruger denne <a target=”_blank” href="https://www.apple.com/dk/macbook-pro-14-and-16/">her</a>. Vi bruger programmer Blender, det kan i downloade <a target=”_blank” href="https://www.blender.org/download/">her</a>. Det er også en god ide at bruge en mus. Den mus jeg bruger kan i finde <a target=”_blank” href="https://www.logitech.com/da-dk/products/mice/mx-master-3s.910-006559.html">her</a>.
+
+                    Jeg anbefaler at i forsøger jer frem med jeres egen stil, og ikke bare følger min undervisning trin for trin, kreativ frihed er det bedste ved at arbejde med 3D.
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!-- Tutorial video and intro -->
+    <section id="up" class="container">
+        <div class="row">
+            <div class="col-12 ps-4 pb-2">
+                <h3>Din første model</h3>
+            </div>
+
+            <div class="col-12 p-4 pb-2 pt-0 col-md-6">
+                    <iframe id="videoElement" src="https://www.youtube.com/embed/OYrs_ZvUImU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-12 p-4 pb-2 pt-0 col-md-6"> 
+                <p>Dit første 3D projekt er lige ved at begynde, her gennemgår vi nogle simple modellerings funktioner til at få en mindre overvældene start. Når din model er færdig, kigger vi på hvordan vi kan give nogle detaljer og lidt karakter, hvorefter vi gennemgår shading samt belysning. Til sidst vil vi kigge på et få bygget en lille scene og den endelige rendering.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Second tutorial video and intro -->
+<section id="up2" class="container">
+    <div class="row">
+        <div class="col-12 ps-4 pb-2 pt-4 pe-md-4 text-md-end">
+            <h3>Animation</h3>
+        </div>
+        <div class="col-12 p-4 pb-2 pt-0 col-md-6 order-md-2 pb-md-5">
+            <img onclick="alert('Du kan få adgang til dette indhold ved at betale for det.')" class="w-100" src="img/Rasmus_lock.png" alt="En hængelås der viser at indholdet ikke er tilgængeligt">
+        </div>
+        <div class="col-12 p-4 pb-2 pt-0 col-md-6"> 
+            <p>I denne episode vil vi bruge den model du skabte i første episode, har du en model i forvejen kan du sagtens bruge den. Vi vil gå ind og skabe et simpelt skelet til modellen så vi kan animere den og give modellen lidt liv. For at opnå det kommer vi til at lære hvordan keyframes fungere og hvordan man kan rendere en videofil frem for et stilbilled.
+
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Third tutorial video and intro -->
+<section id="up3" class="container">
+    <div class="row pb-5">
+        <div class="col-12 ps-4 pb-2 pt-4 pe-md-4">
+            <h3>Din første effekt</h3>
+        </div>
+        <div class="col-12 p-4 pb-2 pt-0 col-md-6 pb-md-5">
+            <img onclick="alert('Du kan få adgang til dette indhold ved at betale for det.')" class="w-100" src="img/Rasmus_lock.png" alt="En hængelås der viser at indholdet ikke er tilgængeligt">
+        </div>
+        <div class="col-12 p-4 pb-2 pt-0 col-md-6"> 
+            <p>I denne episode vil vi kombinere programmet Blender med programmet Davinci for at skabe en special effekt til en video. Vi vil animere en magisk effekt-animation i Blender, hvorefter vi vil importere den til et videoklip i Davinci. Jeg anbefaler i planlægger et klip af jer selv på forhånd så jeres projekt bliver mere personligt.
+
+            </p>
+        </div>
+    </div>
+</section>
+
+</div>
+<footer>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 p-4 pt-5 mt-2 pb-3 col-md-9 pt-md-5 pb-md-5 col-lg-6 ps-lg-3">
+                <form id="form">
+                    <h3>giv os feedback</h3>
+                    <div class="form-floating mb-3">
+                        <input
+                        name="navn"
+                        type="name"
+                        class="form-control"
+                        id="floatingInputDisabled"
+                        placeholder="name@example.com"
+                        />
+                        <label for="floatingInputDisabled">Dit navn</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input
+                          name="email"
+                          type="email"
+                          class="form-control"
+                          id="floatingInput"
+                          placeholder="name@example.com"
+                        />
+                        <label for="floatingInputDisabled">Din E-mail adresse</label>
+                      </div>
+                    <div class="form-floating mb-3">
+                        <textarea
+                        name="feedback"
+                        class="form-control"
+                        placeholder="Leave a comment here"
+                        id="floatingTextareaDisabled"
+                        ></textarea>
+                        <label for="floatingTextareaDisabled">Feedback</label>
+                    </div>
+                    <div class="btn">
+                        <button id="knap" onclick="send()">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+<script
+>
+// email js function
+function send() {
+let data = document.getElementById("form");
+emailjs.sendForm("service_ambw8nr", "template_vle6iha", data).then(
+    function () {
+        console.log("SUCCESS!");
+        },
+    function (error) {
+        console.log("FAILED...", error);
+        })
+    alert('Tak for din besked!');
+      }
+
+let obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            var element = document.getElementById("up");
+            element.classList.add("reveal-animation")
+        }
+    })
+})
+obs.observe(document.querySelector('#up'));
+
+
+let obs2 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            var element = document.getElementById("up2");
+            element.classList.add("reveal-animation")
+        }
+    })
+})
+obs2.observe(document.querySelector('#up2'));
+
+
+let obs3 = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            var element = document.getElementById("up3");
+            element.classList.add("reveal-animation")
+        }
+    })
+})
+obs3.observe(document.querySelector('#up3'));
+
+// On page load there will be an animation class added to queryselector class.
+window.onload = onPageLoad;
+
+function onPageLoad() {
+    document.querySelector('.video_learn').classList.add('slide-from-right');
+    document.querySelector('.load_list').classList.add('slide-from-left');
+    document.querySelector('.load_h1').classList.add('appear');
+    document.querySelector('.bi').classList.add('appear');
+}
+</script>
+
+</body>
+
+    
+</html>

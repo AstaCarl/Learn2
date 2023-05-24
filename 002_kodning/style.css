@@ -1,0 +1,734 @@
+
+/* ------------------------------------------
+                Global styling 
+------------------------------------------*/
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h3, a{ 
+    font-family: 'News Cycle', sans-serif;
+    text-transform: uppercase;
+}
+
+h1, span{
+ cursor: default;
+}
+
+h2, ul{
+    font-family: 'News Cycle', sans-serif;
+    list-style: square;
+}
+
+.hidden{
+    height: 0px;
+    width: 0px;
+}
+
+/* Active link style */
+.active{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+/* -----------------------------------------------------
+                    Frontpage mobile
+--------------------------------------------------------*/
+/* Background color for frontpage */
+.yellow_container{
+    background-color: #F9F8C9;
+    position: relative;
+}
+
+/* Font color frontpage */
+.yellow_container p, .yellow_container h3{
+    color: #2527AE;
+}
+
+/* Headlines uppercase */
+.yellow_container h3{
+    text-transform: uppercase;
+}
+
+/*---------------------------------- 
+                Header 
+-------------------------------------*/
+header{
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    color: #2527AE;
+    position: relative;
+    z-index: 400;
+}
+
+header nav a{
+    margin: 0px 0px 0px 20px;
+}
+
+/* Fontawesome home icon */
+.logo i{
+    font-size: 24px;
+}
+
+/*------------------------------------------ 
+            Frontpage banner 
+------------------------------------------*/
+
+/* Removing elements from the desktop banner*/
+.asta, .rasmus{
+    display: none;
+}
+
+.banner_home ul{
+    display: none;
+}
+
+.bi{
+    display: none;
+}
+
+/* This wrapper will work as a "parralx scroll" effekt on smaller devices */
+.wrapper_home{
+    max-width: 1000px;
+    background-color: #F9F8C9;
+    position: relative;
+    z-index: 2;
+}
+
+/* Styling the larger banner video */
+.background-video {
+    height: 60vw;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 60px;
+    bottom: 0;
+    padding: 0;
+    z-index: 0;
+    opacity: 0;
+  }
+
+.banner_home{
+    max-width: 1000px;
+    margin: auto;
+    background-color: #868DFE;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 250px;
+    background-size: 100%;
+}
+
+.banner_home h1{
+    /* Text outline */
+    -webkit-text-stroke: 3px #F9F8C9;
+    font-size: 90px;
+    color: transparent;
+    position: fixed;
+    z-index: 1;
+    top: 200px;
+    opacity: 0;
+}
+
+/* animation for choose your teacher */
+
+#revealrasmus, #revealasta, #up, #up2, #up3{
+    opacity: 0;
+}
+
+.reveal-animation{
+    animation: reveal 1.5s ease 100ms forwards;
+}
+@keyframes reveal{
+    0%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/* Button style for frontpage */
+
+.btn a{
+    pointer-events: visible;
+    color:#F9F8C9;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 20px;
+    border: solid 1px #2527AE;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #2527AE;
+    transition: 200ms ease-in-out;
+}
+
+.btn a:hover{
+    color: #2527AE;
+    transform: scale(1.1);
+}
+
+.banner_home ul{
+    display: block;
+    color: #2527AE;
+    font-size: 24px;
+    position: relative;
+    bottom: 380px;
+    opacity: 0;
+    }
+
+button{
+    pointer-events: visible;
+    background-color: white;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px 32px;
+    border: solid 1px #2527AE;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #2527AE;
+    transition: 200ms ease-in-out;
+}
+
+button:hover{
+    color: #2527AE;
+    transform: scale(1.1);
+}
+
+.yellow_container .btn{
+    display: flex;
+    justify-content: center;
+}
+
+/* Links withing textareas style */
+p a{
+    text-transform: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* footer and contact form frontpage style */
+::placeholder{
+    color: #2527ae7d;
+}
+
+footer{
+    background-color: white;
+    color: #2527ae69;
+    position: relative;
+    z-index: 4;
+}
+
+ .form-control-text{
+    width: 100%;
+    height: 100px;
+    color: #2527AE;
+}
+
+.form h3{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.form-control, .form-control-text{
+    border-radius: 0;
+    border: solid 1px #2527AE;
+}
+
+input, textarea{
+    border-radius: 0;
+    width: 80%;
+}
+
+form .btn{
+    display: flex;
+    justify-content: end !important;
+}
+/* 
+------------------3D VFX page---------------------
+*/
+
+/* Background color for painting page */
+.blue_container{
+    background-color: #C8DCEB;
+}
+
+.blue_container p, .blue_container h3, .blue_container ul{
+ color: #EB3333;
+}
+
+/* Header with navigation and logo */
+.blue_container header a{
+    color: #EB3333;
+}
+
+/* Banner styling for painting page */
+.video_learn{
+    display: none;
+}
+
+.banner_learn h1{
+    font-weight: 800;
+    font-size: 150px;
+    -webkit-text-stroke: 3px #EB3333;
+    color: transparent;
+    margin-left: 4px;
+    position: relative;
+    z-index: 50;
+    opacity: 0;
+}
+
+.banner_learn span{
+    color: #EB3333;
+}
+
+.banner_learn ul{
+    font-size: 24px;
+    opacity: 0;
+}
+
+.blue_container h1{
+font-size: 140px;
+}
+
+#videoElement, .pink_container img, .blue_container img{
+    box-shadow: -14px 17px 36px -14px rgba(0,0,0,0.38);
+}
+
+iframe{
+    height: 255px;
+    width: 100%;
+}
+img{
+    cursor: pointer;
+}
+
+/* Footer style for vfx page */
+
+.blue_container footer{
+    background-color: white;
+    color: #eb333367;
+}
+
+.blue_container .form-control, .blue_container .form-control-text{
+    border: solid 1px #EB3333;
+}
+
+/* Button style painting page */
+.blue_container .btn a{
+    border: solid 1px #EB3333;
+    -webkit-text-stroke: 1px #EB3333;
+    color: transparent;
+}
+
+footer .btn{
+    display: flex;
+    justify-content: end;
+    padding: 0;
+}
+
+.blue_container button{
+    border: solid 1px #EB3333;
+    -webkit-text-stroke: 1px #EB3333;
+}
+
+.blue_container #knap:hover{
+    color: #EB3333;
+}
+
+/* 
+------------------Paintpage---------------------
+*/
+
+/* Background color for painting page */
+.pink_container{
+    background-color: #FFD2E8;
+}
+
+.pink_container p, .pink_container h3, .pink_container ul{
+ color: #0C7D62;
+}
+
+/* Header with navigation and logo */
+.pink_container header a{
+    color: #0C7D62;
+}
+
+.pink_container ul{
+    margin-left: 10px;
+}
+
+/* Banner styling for painting page */
+.pink_container .banner_learn h1{
+    -webkit-text-stroke: 3px #0C7D62;
+}
+
+.pink_container .banner_learn span{
+    color: #0C7D62;
+    letter-spacing: 8px;
+}
+
+/* Button style painting page */
+.pink_container .btn a{
+    border: solid 1px #0C7D62;
+    -webkit-text-stroke: 1px #0C7D62;
+    color: transparent;
+}
+
+.pink_container #knap:hover{
+    color: #0C7D62;
+}
+
+/* Footer style for painting page */
+.pink_container footer{
+    background-color: white;
+    color: #0c7d638b;
+}
+
+.pink_container .form-control, .pink_container .form-control-text{
+    border: solid 1px #0C7D62;
+}
+
+.pink_container button{
+    border: solid 1px #0C7D62;
+    -webkit-text-stroke: 1px #0C7D62;
+}
+
+
+/*---------------------------------
+        Animation classes 
+----------------------------------*/
+
+
+/* Videobanner frontpage mobile */
+
+/* Animation for h1 and scroll arrow */
+.appear{
+    animation: appear 1s ease 300ms forwards;
+    position: relative;
+    z-index: 200;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* Individual video animation */
+.slide-from-right{
+    animation: slide-right 1500ms ease 500ms forwards;
+}
+
+@keyframes slide-right {
+    0% {
+     opacity: 0;
+     transform: translateX(30px);
+    }
+    
+    100% {
+     opacity: 1;
+     transform: translate(0px);
+    }
+   }
+
+/* Individual video animation */
+.slide-from-down{
+    animation: slide-up 1500ms ease 500ms forwards;
+}
+
+@keyframes slide-up {
+    0% {
+     opacity: 0;
+     transform: translateY(30px);
+    }
+    
+    100% {
+     opacity: 1;
+     transform: translate(0px);
+    }
+   }
+ 
+/* animation for the lists */
+.slide-from-left{
+    animation: slide-in 1500ms ease 500ms forwards;
+}
+
+@keyframes slide-in {
+    0% {
+     opacity: 0;
+     transform: translateX(-30px);
+    }
+    50%{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    100% {
+     opacity: 1;
+     transform: translate(0px);
+    }
+   }
+
+
+
+
+/*------------------------ 
+Media query for tablets 
+------------------------*/
+@media (min-width: 768px) { 
+
+/* Banner for frontpage adjustments */
+.banner_home{
+    height: 380px;
+}
+.background-video{
+    height: 60vw;
+}
+.banner_home h1{
+    top: 330px;
+}
+  
+/* Banner for learning pages adjustment */
+.video_learn{
+    display: block;
+        width: 280px;
+        position: relative;
+        bottom: 340px;
+        left: 427px;
+        z-index: 0;
+        opacity: 0;
+}
+
+.banner_learn h1{
+    font-size: 200px;
+   }
+ }
+
+
+/* -----------------------------
+Media query, for screen size 992 
+-------------------------------*/
+
+@media (min-width: 992px) {
+
+/* Giving the page a max with to make sure the content doesn't scale */
+.wrapper_learn{
+    max-width: 1000px;
+    margin: auto;
+ }
+
+ .wrapper_home{
+    margin: auto;
+ }
+
+ header .container{
+    max-width: 1000px;
+ }
+
+/* Header links hover underline animation */
+header nav a{
+    display: inline-block;
+    position: relative;
+    color: #2527AE;
+  }
+  
+header a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2527AE;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+header a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+/* Front page banner adjustments */
+.background-video{
+    display: none;
+}
+
+.banner_home{
+    background-color: #F9F8C9;
+    background-image: none;
+    justify-content: flex-start;
+    height: 600px;
+}
+
+.banner_home ul{
+    display: block;
+    color: #2527AE;
+    font-size: 24px;
+    position: relative;
+    bottom: 380px;
+    opacity: 0;
+    }
+
+
+.banner_home h1{
+    -webkit-text-stroke: 3px #2527AE;
+    font-size: 220px;
+    z-index: 100;
+    position: relative;
+    top: 0px;
+    font-weight: 800;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.banner_home span{
+    color: #2527AE;
+}
+
+.banner_home i{
+    width: 20px;
+}
+
+.banner_home .bi{
+    display: block;
+    font-size: 36px;
+    color: #2527AE;
+    position: relative;
+    bottom: 390px;
+    right: 15px;
+}
+
+.asta{
+    display: block;
+    position: relative;
+    width: 280px;
+    bottom: 150px;
+    left: 690px;
+    opacity: 0;
+}
+
+.rasmus{
+    display: block;
+    width: 280px;
+    position: relative;
+    left: 120px;
+    bottom: 60px;
+    opacity: 0;
+}
+
+/* Header link hover animation painting site */
+
+.pink_container header nav a{
+    color: #0C7D62;
+  }
+  
+.pink_container header a:after {
+    background-color: #0C7D62;
+  }
+
+/*
+-------------------------VFX page---------------------------
+*/
+
+.blue_container header nav a{
+    color: #EB3333;
+  }
+  
+.blue_container header a:after {
+    background-color: #EB3333;
+  }
+
+
+/* Banner */
+  .banner_learn h1{
+    font-size: 280px;
+  }
+
+  .video_learn{
+    width: 350px;
+    position: relative;
+    bottom: 460px;
+    left: 620px;
+  }
+
+  .banner_learn .bi{
+    display: block;
+    font-size: 36px;
+    position: relative;
+    bottom: 0px;
+    right: 5px;
+    width: 20px;
+    opacity: 0;
+  }
+
+  .blue_container .bi{
+    color: #EB3333;
+}
+
+.pink_container .bi{
+    color: #0C7D62;
+}
+
+
+
+ }
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+
+/* Banner, elements placement on this screen size */
+.asta{
+    bottom: 150px;
+    left: 707px;
+}
+
+.rasmus{
+    left: 138px;
+    bottom: 60px;
+}
+
+.banner_home h1{
+    -webkit-text-stroke: 3px #2527AE;
+    font-size: 220px;
+    z-index: 100;
+    position: relative;
+    font-weight: 800;
+    margin-top: -30px;
+    margin-left: -12px;
+}
+
+.banner_home ul{
+    margin-left: 15px;
+}
+
+.banner_home .bi{
+    left: 0px;
+    opacity: 0;
+}
+
+/* Banner for vfx-page */
+.video_learn{
+    width: 350px;
+    bottom: 465px;
+    left: 640px;
+  }
+}
